@@ -32,7 +32,7 @@ def payment_order(request):
 
 		try:	
 			DATA = {'amount':amount,'receipt':receipt, 'payment_capture':payment_capture,'currency':'INR'}
-			client = razorpay.Client(auth=("rzp_test_3nFELOr7bXJh1l", "CB4LvqKCMsURzpg64dWETiSo")) 
+			client = razorpay.Client(auth=("Test_Key", "Test_password")) 
 			razorpay_response_data = client.order.create(data=DATA)
 			data_as_json = json.dumps(razorpay_response_data)
 			data = json.loads(data_as_json)
