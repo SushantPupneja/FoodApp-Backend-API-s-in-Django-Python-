@@ -54,9 +54,6 @@ def payment_order(request):
 		razorpay_order_id = 'None'
 		print str(e)
 
-	# key_id						key_secret
-	# rzp_test_3nFELOr7bXJh1l		CB4LvqKCMsURzpg64dWETiSo
-
 	# try:
 	# 	
 	# 	responseCode = 200
